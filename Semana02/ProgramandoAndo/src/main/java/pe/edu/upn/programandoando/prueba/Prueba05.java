@@ -14,7 +14,7 @@ public class Prueba05 {
 		dto.setCantidad(10);
 		// Proceso
 		VentaService service = new VentaService();
-		dto = service.procesar(dto);
+		dto = service.procesarVenta(dto);
 		// Reporte
 		System.out.println("Importe: " + dto.getImporte());
 		System.out.println("Impuesto: " + dto.getImpuesto());

@@ -5,7 +5,7 @@ import pe.edu.upn.programandoando.dto.VentaDto;
 
 public class VentaService {
 	
-	public VentaDto procesar(VentaDto dto){
+	public VentaDto procesarVenta(VentaDto dto){
 		// Variables
 		double importe;
 		double impuesto;
