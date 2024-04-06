@@ -12,6 +12,17 @@ public class VentaDto {
 	private double impuesto;
 	private double total;
 
+	public VentaDto() {
+	}
+
+	public VentaDto(String producto, double precio, int cantidad) {
+		this.producto = producto;
+		this.precio = precio;
+		this.cantidad = cantidad;
+	}
+	
+	
+
 	public String getProducto() {
 		return producto;
 	}
