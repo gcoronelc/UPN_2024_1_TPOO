@@ -15,7 +15,7 @@ public class AccesoDB {
 	public static Connection getConnection() throws SQLException {
 		Connection cn = null;
 		String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-		String urlDB = "jdbc:sqlserver://192.1.1.68:1433;databaseName=EUREKABANK;encrypt=True;TrustServerCertificate=True;";
+		String urlDB = "jdbc:sqlserver://localhost:1433;databaseName=EUREKABANK;encrypt=True;TrustServerCertificate=True;";
 		String user = "sa";
 		String pass = "database";
 		try {

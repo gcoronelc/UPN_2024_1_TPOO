@@ -1,1 +1,6 @@
+pe\edu\upn\eurekaapp\dto\CuentaDto.class
+pe\edu\upn\eurekaapp\prueba\Prueba02.class
+pe\edu\upn\eurekaapp\db\AccesoDB.class
+pe\edu\upn\eurekaapp\prueba\Prueba01.class
 pe\edu\upn\eurekaapp\EurekaApp.class
+pe\edu\upn\eurekaapp\service\CuentaService.class
