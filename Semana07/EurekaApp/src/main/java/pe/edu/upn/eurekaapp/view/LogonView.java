@@ -1,16 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
- */
+
 package pe.edu.upn.eurekaapp.view;
 
-import pe.edu.upn.eurekaapp.prueba.Prueba03;
-import pe.edu.upn.eurekaapp.util.Session;
+import javax.swing.JOptionPane;
+import pe.edu.upn.eurekaapp.dto.EmpleadosDto;
+import pe.edu.upn.eurekaapp.service.LogonService;
 
-/**
- *
- * @author UPN
- */
+
 public class LogonView extends javax.swing.JDialog {
 
 	/**
@@ -19,6 +14,7 @@ public class LogonView extends javax.swing.JDialog {
 	public LogonView(java.awt.Frame parent, boolean modal) {
 		super(parent, modal);
 		initComponents();
+		this.setLocationRelativeTo(null);
 	}
 
 	/**
@@ -158,9 +154,23 @@ public class LogonView extends javax.swing.JDialog {
    }//GEN-LAST:event_btnSalirActionPerformed
 
    private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
-      String usuario = txtUsuario.getText();
-		Session.put("Usuario", usuario);
-		Prueba03.main(null);
+      try {
+			// Datos
+			String usuario = txtUsuario.getText();
+			String clave = String.valueOf(txtClave.getPassword());
+			// Proceso
+			LogonService service = new LogonService();
+			EmpleadosDto dto = service.validarUsuario(usuario, clave);
+			if(dto == null){
+				throw new RuntimeException("Datos incorrectos");
+			}
+			// Cargar formulario de cuentas
+			this.dispose();
+			MainView view = new MainView();
+			view.setVisible(true);
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, e.getMessage());
+		}
    }//GEN-LAST:event_btnIngresarActionPerformed
 
 	/**

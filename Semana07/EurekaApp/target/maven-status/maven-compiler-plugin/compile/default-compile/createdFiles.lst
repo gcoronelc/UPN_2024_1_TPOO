@@ -1,6 +1,14 @@
+pe\edu\upn\eurekaapp\prueba\Prueba04.class
+pe\edu\upn\eurekaapp\view\MainView$3.class
+pe\edu\upn\eurekaapp\view\ConCuentasView$1.class
 pe\edu\upn\eurekaapp\dto\CuentaDto.class
 pe\edu\upn\eurekaapp\prueba\Prueba02.class
 pe\edu\upn\eurekaapp\db\AccesoDB.class
+pe\edu\upn\eurekaapp\view\MainView$2.class
+pe\edu\upn\eurekaapp\view\MainView.class
+pe\edu\upn\eurekaapp\view\ConCuentasView$2.class
 pe\edu\upn\eurekaapp\prueba\Prueba01.class
 pe\edu\upn\eurekaapp\EurekaApp.class
 pe\edu\upn\eurekaapp\service\CuentaService.class
+pe\edu\upn\eurekaapp\view\MainView$1.class
+pe\edu\upn\eurekaapp\view\ConCuentasView.class

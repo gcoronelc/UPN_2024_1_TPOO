@@ -17,7 +17,7 @@ public class AccesoDB {
 		String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 		String urlDB = "jdbc:sqlserver://localhost:1433;databaseName=EUREKABANK;encrypt=True;TrustServerCertificate=True;";
 		String user = "sa";
-		String pass = "database";
+		String pass = "sql";
 		try {
 			// Paso 1: Cargar el driver a memoria 
 			Class.forName(driver).getDeclaredConstructor().newInstance();
